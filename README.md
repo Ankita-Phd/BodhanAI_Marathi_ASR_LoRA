@@ -1,4 +1,4 @@
-# Marathi ASR fine-tuning with LoRA — Bodhan AI Indic-Transcribe
+# Marathi ASR fine-tuning with LoRA for Bodhan AI Indic-Transcribe
 
 Take-home assignment, AI Research Engineer, AI4Bharat (IIT Madras) · Author: Ankita
 
