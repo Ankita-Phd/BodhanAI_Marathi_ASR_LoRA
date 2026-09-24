@@ -1,0 +1,57 @@
+{
+  "train_minutes": 46.7,
+  "peak_gpu_gb": 10.25,
+  "best_step": 57,
+  "best_val_wer": 0.2083040177822113,
+  "trainable_params": 41943040,
+  "baseline_mr": {
+    "wer": 0.18236120871398454,
+    "cer": 0.06421634074190424,
+    "utterances": 297,
+    "tag": "baseline_mr"
+  },
+  "lora_mr": {
+    "wer": 0.15231904427266338,
+    "cer": 0.045053535432864736,
+    "utterances": 297,
+    "tag": "lora_mr"
+  },
+  "baseline_hi": {
+    "wer": 0.1184549356223176,
+    "cer": 0.06198526224534027,
+    "utterances": 100,
+    "tag": "baseline_hi"
+  },
+  "lora_hi": {
+    "wer": 0.1407725321888412,
+    "cer": 0.08400520156046815,
+    "utterances": 100,
+    "tag": "lora_hi"
+  },
+  "cfg": {
+    "model_repo": "bodhan-ai/indic-transcribe-flex",
+    "lang": "mr",
+    "pnc": "yes",
+    "dataset": "google/fleurs",
+    "hf_config": "mr_in",
+    "text_col": "raw_transcription",
+    "subset": {
+      "train": 1000,
+      "validation": 150,
+      "test": 300
+    },
+    "min_dur": 0.5,
+    "max_dur": 30.0,
+    "data_dir": "/content/data",
+    "lora_r": 32,
+    "lora_alpha": 64,
+    "lora_dropout": 0.05,
+    "lr": 0.0002,
+    "epochs": 2,
+    "warmup_ratio": 0.1,
+    "min_lr": 1e-06,
+    "batch_duration": 40.0,
+    "accum": 3,
+    "seed": 42
+  }
+}
